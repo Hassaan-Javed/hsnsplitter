@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>>Hsn Splitter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1>Hsn Splitter App</h1>
+
+    <!-- The output card -->
+    <div class="card-outputs">
+      <div class="output-row">
+        <span>Total Bill</span>
+        <span id="out-bill">RS 0.00</span>
+      </div>
+      <div class="output-row">
+        <span>Total Tip</span>
+        <span id="out-tip">RS 0.00</span>
+      </div>
+      <div class="output-row">
+        <span>Per Person</span>
+        <span id="out-per-person">RS 0.00</span>
+      </div>
+    </div>
+
+    <!-- Card for inputs -->
+    <div class="card-calculator">
+
+      <div class="inp-container">
+        <label for="inp-bill">Total Bill (RS. )</label>
+        <input type="number" id="inp-bill" placeholder="e.g. 50" min="0" />
+        <span class="error-msg" id="err-bill"></span>
+      </div>
+
+      <div class="inp-container">
+        <label for="inp-persons">Number of Persons</label>
+        <input type="number" id="inp-persons" placeholder="e.g. 2" min="1" value="1" />
+        <span class="error-msg" id="err-persons"></span>
+      </div>
+
+      <div class="inp-container">
+        <label for="inp-tip">Tip Percentage (%)</label>
+        <input type="number" id="inp-tip" placeholder="e.g. 15" min="0" max="100" value="0" />
+        <span class="error-msg" id="err-tip"></span>
+      </div>
+
+      <button id="btn-reset">Reset</button>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
